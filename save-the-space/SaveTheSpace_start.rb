@@ -55,7 +55,7 @@ class SaveTheSpace < Gosu::Window
 			@message2 += "Você destruiu #{@enemies_destroyed} naves inimigas."
 		end
 			@bottom_message = "Seu Placar Total: #{@player.placar} "
-			@bottom_message2 = "Aperte 'R' para Reiniciar ou 'S' para Sair."
+			@bottom_message2 = "Aperte 'R' ou 'Start' para Reiniciar ou 'S' ou 'Select' para Sair."
 			@message_font = Gosu::Font.new(28)
 			@credits = []
 		y = 480
@@ -111,7 +111,7 @@ class SaveTheSpace < Gosu::Window
     @message_font.draw(@message2,10,75,1,1,1,Gosu::Color::FUCHSIA)
     draw_line(0,480,Gosu::Color::RED,WIDTH,480,Gosu::Color::RED)
     @message_font.draw(@bottom_message,270,540,1,1,1,Gosu::Color::AQUA)
-    @message_font.draw(@bottom_message2,170,500,1,1,1,Gosu::Color::AQUA)
+    @message_font.draw(@bottom_message2,62,500,1,1,1,Gosu::Color::AQUA)
   end
 
 	def button_down(id)
