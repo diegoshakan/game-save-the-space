@@ -126,7 +126,7 @@ class SaveTheSpace < Gosu::Window
 	end
 
 	def button_down_start(id)
-		if id == Gosu::KbReturn then
+		if id == Gosu::KbReturn or button_down? Gosu::GpButton6 then
 			initialize_game
 	end
 	end
@@ -134,14 +134,13 @@ class SaveTheSpace < Gosu::Window
 	def update_game
 		@fundoY = (@fundoY + 4) % 600
 
-			if (button_down?(Gosu::KbLeft)) then 
+			if button_down? Gosu::KbLeft or Gosu::button_down? Gosu::GpLeft
 		 		@player.turn_left
 		 	end
-			if (button_down?(Gosu::KbRight)) then
+			if button_down? Gosu::KbRight or Gosu::button_down? Gosu::GpRight
 				@player.turn_right 
 			end
-
-
+			
 			if rand < ENEMY_FREQUENCY
 				@enemies.push Enemy.new(self)
 				@enemies_appeared += 1
@@ -214,7 +213,7 @@ class SaveTheSpace < Gosu::Window
 	end
 
 	def button_down_game(id)
-		if id == Gosu::KbSpace
+		if id == Gosu::KbSpace or button_down? Gosu::GpButton0
 			@bullets.push Bullet.new(self, @player.x, @player.y, @player.angle)
 			@shooting_sound.play(0.05)
 			
@@ -222,9 +221,9 @@ class SaveTheSpace < Gosu::Window
 	end
 
 	def button_down_end(id)
-		if id == Gosu::KbR
+		if id == Gosu::KbR or button_down? Gosu::GpButton6
 			initialize_game
-		elsif id == Gosu::KbS
+		elsif id == Gosu::KbS or button_down? Gosu::GpButton4
 			close
 		end
 	end
