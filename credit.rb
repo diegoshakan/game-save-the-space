@@ -16,7 +16,7 @@ class Credit
 	end
 
 	def draw
-		@font.draw(@text, @x, @y, 1)
+		@font.draw_text(@text, @x, @y, 1)
 	end
 	
 	def reset
