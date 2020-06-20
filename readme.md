@@ -17,6 +17,7 @@ https://github.com/gosu/gosu/wiki#installation
 
 ## Após Instalação dos Requisitos
 1. Abra o Terminal/Prompt;
+1. Clone/baixe este repositório para sua máquina;
 1. Navegue até a pasta game-save-the-space;
 1. E rode o arquivo: **$ ruby SaveTheSpace_start.rb**;
 1. Divirta-se!
