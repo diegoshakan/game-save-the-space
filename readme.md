@@ -8,7 +8,7 @@ O jogo consiste em uma nave terráquea que tenta impedir uma invasão alienígen
 - [Biblioteca Gosu](https://www.libgosu.org/);
 
 ## Para instalação do Gosu
-- Para o seus SO de preferência consulte a documentação no link abaixo:
+- Para o seus SO de preferência consulte a documentação no link:
 https://github.com/gosu/gosu/wiki#installation
 
 ## Após Instalação dos Requisitos
