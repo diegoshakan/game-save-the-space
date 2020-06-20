@@ -85,7 +85,7 @@ class SaveTheSpace < Gosu::Window
 
 	def draw_game
 		@player.draw
-		@font.draw_text("Placar: #{@player.placar}",10, 10, 3, 1.5, 1.5, 0xffffff00)
+		@font.draw("Placar: #{@player.placar}",10, 10, 3, 1.5, 1.5, 0xffffff00)
 		@enemies.each do |enemy|
 			enemy.draw
 		end
@@ -106,11 +106,11 @@ class SaveTheSpace < Gosu::Window
       end
     end 
     draw_line(0,140,Gosu::Color::RED,WIDTH,140,Gosu::Color::RED)
-    @message_font.draw_text(@message,10,40,1,1,1,Gosu::Color::FUCHSIA)
-    @message_font.draw_text(@message2,10,75,1,1,1,Gosu::Color::FUCHSIA)
+    @message_font.draw(@message,10,40,1,1,1,Gosu::Color::FUCHSIA)
+    @message_font.draw(@message2,10,75,1,1,1,Gosu::Color::FUCHSIA)
     draw_line(0,480,Gosu::Color::RED,WIDTH,480,Gosu::Color::RED)
-    @message_font.draw_text(@bottom_message,270,540,1,1,1,Gosu::Color::AQUA)
-    @message_font.draw_text(@bottom_message2,62,500,1,1,1,Gosu::Color::AQUA)
+    @message_font.draw(@bottom_message,270,540,1,1,1,Gosu::Color::AQUA)
+    @message_font.draw(@bottom_message2,62,500,1,1,1,Gosu::Color::AQUA)
   end
 
 	def button_down(id)
@@ -131,7 +131,7 @@ class SaveTheSpace < Gosu::Window
 	end
 
 	def update_game
-		@fundoY = (@fundoY) % 511
+		@fundoY = (@fundoY + 1) % 511
 
 			if button_down? Gosu::KbLeft or Gosu::button_down? Gosu::GpLeft
 		 		@player.turn_left
