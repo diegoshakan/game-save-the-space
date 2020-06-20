@@ -4,3 +4,8 @@
 1. Estes códigos foram commitados na minha conta do Github "diegoshakan" (Diego Araujo). Se quiser também tenho uma pasta compartilhada no Drive, é só entrar em contato comigo que te passo tudo. Não se esqueça dos créditos e nem de me dá 30% do que você ganhar hahaha;
 1. Este jogo foi desenvolvido em Ruby quando eu fazia Tecnologia em Análise e Desenvolvimento de Sistemas no IFRN Natal Central 2016 e foi o projeto final da disciplina de Programação de Computadores. até o dia deste commit estava cursando Tecnologia em Sistemas para Internet no IFRN Parnamirim 2018.
 1. Na tela inicial diz que certo botão quando pressionado solta um especial, não deu tempo para fazermos esse especial hahaha. Então não faz nada de especial.
+
+
+
+### Para instalação do Gosu
+ - https://github.com/gosu/gosu/wiki#installation
