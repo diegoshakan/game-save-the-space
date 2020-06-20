@@ -28,7 +28,7 @@ class SaveTheSpace < Gosu::Window
 		@enemies = []
 		@bullets = []
 		@explosions = []
-		@fundoY = 0
+		@fundoY = 100
 		@font = Gosu::Font.new(20)
 		@scene = :game
 		@enemies_appeared = 0
@@ -85,7 +85,7 @@ class SaveTheSpace < Gosu::Window
 
 	def draw_game
 		@player.draw
-		@font.draw("Placar: #{@player.placar}",10, 10, 3, 1.5, 1.5, 0xffffff00)
+		@font.draw_text("Placar: #{@player.placar}",10, 10, 3, 1.5, 1.5, 0xffffff00)
 		@enemies.each do |enemy|
 			enemy.draw
 		end
@@ -96,7 +96,7 @@ class SaveTheSpace < Gosu::Window
 			explosion.draw
 		end
 		@imagem_fundo.draw(0,@fundoY,0)
-		@imagem_fundo.draw(0,@fundoY-511,0)
+		@imagem_fundo.draw(0,@fundoY-600,0)
 	end
 
 	def draw_end
@@ -131,7 +131,7 @@ class SaveTheSpace < Gosu::Window
 	end
 
 	def update_game
-		@fundoY = (@fundoY + 1) % 511
+		@fundoY = (@fundoY + 4) % 600
 
 			if button_down? Gosu::KbLeft or Gosu::button_down? Gosu::GpLeft
 		 		@player.turn_left
