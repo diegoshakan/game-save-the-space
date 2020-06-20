@@ -15,17 +15,17 @@ class SaveTheSpace < Gosu::Window
 	def initialize
 		super(WIDTH, HEIGHT)
 		self.caption = 'Save The Space'
-		@imagem_fundo = Gosu::Image.new("space.png")
+		@imagem_fundo = Gosu::Image.new("media/space.png")
 		@player = Player.new(self)
 		@enemies = []
 		@bullets = []
 		@explosions = []
 		@fundoY = 0
 		@font = Gosu::Font.new(20)
-		@start_music = Gosu::Song.new('space walk.ogg')
+		@start_music = Gosu::Song.new('media/space walk.ogg')
 		@start_music.play(true)
-		@explosion_sound = Gosu::Sample.new('explosion.wav')
-		@shooting_sound = Gosu::Sample.new('laser2.wav')
+		@explosion_sound = Gosu::Sample.new('media/explosion.wav')
+		@shooting_sound = Gosu::Sample.new('media/laser2.wav')
 		
 		
 		

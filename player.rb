@@ -7,7 +7,7 @@ attr_accessor :placar
 		@y = 510
 		@angle = 0
 		@radius = 20
-		@image = Gosu::Image.new('nave1.png')
+		@image = Gosu::Image.new('media/nave1.png')
 		@window = window
 		@placar = 0
 	end

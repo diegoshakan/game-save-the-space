@@ -15,16 +15,16 @@ class SaveTheSpace < Gosu::Window
 	def initialize
 		super(WIDTH, HEIGHT)
 		self.caption = "Save The Space"
-		@background_image = Gosu::Image.new('start1.jpg')
+		@background_image = Gosu::Image.new('media/start1.jpg')
 		@scene = :start
-		@start_music = Gosu::Song.new('startspace.ogg')
+		@start_music = Gosu::Song.new('media/startspace.ogg')
 		@start_music.play(true)
 
 	end
 
 	def initialize_game
 		@player = Player.new(self)
-		@imagem_fundo = Gosu::Image.new("space.jpg")
+		@imagem_fundo = Gosu::Image.new("media/space.jpg")
 		@enemies = []
 		@bullets = []
 		@explosions = []
@@ -33,10 +33,10 @@ class SaveTheSpace < Gosu::Window
 		@scene = :game
 		@enemies_appeared = 0
 		@enemies_destroyed = 0
-		@music = Gosu::Song.new('space walk.ogg')
+		@music = Gosu::Song.new('media/space walk.ogg')
 		@music.play(true)
-		@explosion_sound = Gosu::Sample.new('explosion.wav')
-		@shooting_sound = Gosu::Sample.new('laser2.wav')
+		@explosion_sound = Gosu::Sample.new('media/explosion.wav')
+		@shooting_sound = Gosu::Sample.new('media/laser2.wav')
 	end
 
 	def initialize_end(fate)
@@ -58,12 +58,12 @@ class SaveTheSpace < Gosu::Window
 			@message_font = Gosu::Font.new(28)
 			@credits = []
 		y = 480
-		File.open('credits.txt').each do |line|
+		File.open('media/credits.txt').each do |line|
 		@credits.push(Credit.new(self,line.chomp,30,y))
 		y+=30
 		end
 		@scene = :end
-		@end_music = Gosu::Song.new('bells2_1.ogg')
+		@end_music = Gosu::Song.new('media/bells2_1.ogg')
 		@end_music.play(true)
 		
 	end
@@ -96,7 +96,7 @@ class SaveTheSpace < Gosu::Window
 			explosion.draw
 		end
 		@imagem_fundo.draw(0,@fundoY,0)
-		@imagem_fundo.draw(0,@fundoY-480,0)
+		@imagem_fundo.draw(0,@fundoY-511,0)
 	end
 
 	def draw_end
@@ -131,7 +131,7 @@ class SaveTheSpace < Gosu::Window
 	end
 
 	def update_game
-		@fundoY = (@fundoY + 4) % 600
+		@fundoY = (@fundoY) % 511
 
 			if button_down? Gosu::KbLeft or Gosu::button_down? Gosu::GpLeft
 		 		@player.turn_left

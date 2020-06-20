@@ -9,7 +9,7 @@ class Enemy
 		@radius = 30
 		@x = rand(window.width - 5 * @radius) + @radius
 		@y = 0
-		@image = Gosu::Image.new('enemy1.png')
+		@image = Gosu::Image.new('media/enemy1.png')
 	end
 
 	def draw
