@@ -1,10 +1,16 @@
 # Save The Space
-  <p align="center">
-    <img width="460" height="300" src="/media/Game-Save-The-Space.gif">
-  </p>
+![GitHub repo size](https://img.shields.io/github/repo-size/diegoshakan/game-save-the-space?style=plastic)
+![GitHub language count](https://img.shields.io/github/languages/count/diegoshakan/game-save-the-space?style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/diegoshakan/game-save-the-space?style=plastic)
+
+<p align="center">
+  <img width="460" height="300" src="/media/Game-Save-The-Space.gif">
+</p>
 
 Um game feito por mim e teve a participação de um colega de faculdade [Matheus Henrique](https://github.com/matheushenrique27), para o projeto final da disciplina de programação de computadores na turma de Análise e Desenvolvimento de Sistemas do IFRN 2016.1.
+
 Fiz este game com muita dedicação, carinho e com muito desejo de aprender. Pois era um sonho de criança, um dia criar um jogo de computador/videogame.
+
 O jogo consiste em uma nave terráquea que tenta impedir uma invasão alienígena, esta nave terráquea é a única muralha que serpara a liberdade da terra e a escravidão por outra espécie. Por isso, lute até o fim e defenda-nos.
 
 ## Requisitos
@@ -12,7 +18,7 @@ O jogo consiste em uma nave terráquea que tenta impedir uma invasão alienígen
 - [Biblioteca Gosu](https://www.libgosu.org/);
 
 ## Para instalação do Gosu
-- Para o seus SO de preferência consulte a documentação no link:
+- Para o seu SO de preferência consulte a documentação no link, pois esta biblioteca pode precisar de algumas dependências:
 https://github.com/gosu/gosu/wiki#installation
 
 ## Após Instalação dos Requisitos
