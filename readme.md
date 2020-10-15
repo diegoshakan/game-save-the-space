@@ -11,7 +11,7 @@ Um game feito por mim e teve a participação de um colega de faculdade [Matheus
 
 Fiz este game com muita dedicação, carinho e com muito desejo de aprender. Pois era um sonho de criança, um dia criar um jogo de computador/videogame.
 
-O jogo consiste em uma nave terráquea que tenta impedir uma invasão alienígena, esta nave terráquea é a única muralha que serpara a liberdade da terra e a escravidão por outra espécie. Por isso, lute até o fim e defenda-nos.
+O jogo consiste em uma nave terráquea que tenta impedir uma invasão alienígena, esta nave terráquea é a única muralha que separa a liberdade da terra e a escravidão por outra espécie. Por isso, lute até o fim e defenda-nos.
 
 ## Requisitos
 - [Ruby](https://www.ruby-lang.org/pt/);
